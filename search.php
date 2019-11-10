@@ -12,7 +12,7 @@
 					<span class="time"><i class="iconfont icon-data"></i><a href="/<?php $this->date('Y/m/'); ?>" title="<?php $this->date('Y-m-d'); ?>"><?php $this->dateWord();?></a></span>
 					<span class="author"><i class="iconfont icon-author"></i><a href="/"><?php $this->author(); ?></a></span>
 					<span class="cate"><i class="iconfont icon-category"></i><?php $this->category(','); ?></span>
-					<span class="views"><i class="iconfont icon-view"></i><?php Views_Plugin::theViews(); ?></span>
+					<span class="views"><i class="iconfont icon-view"></i><?php theViews(); ?></span>
 					<span class="com"><i class="iconfont icon-comment"></i><a href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('暂无', '1条', '%d条'); ?></a></span>
 				</div>	
 			</div>			

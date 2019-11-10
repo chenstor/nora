@@ -15,7 +15,7 @@ $this->need('header.php');
 	<article class="post">
 		<div class="post_title">
 		<h2 class="title"><a href="<?php $this->permalink() ?>" rel="bookmark"><?php $this->title() ?></a></h2>
-		<div class="title_info"><span class="time"><i class="iconfont icon-data"></i><a href="<?php $this->date('Y/m/'); ?>" title="<?php $this->date('Y-m-d'); ?>"><?php $this->dateWord();?></a></span><span class="author"><i class="iconfont icon-author"></i><a href="/"><?php $this->author(); ?></a></span><span class="cate"><i class="iconfont icon-category"></i><?php $this->category(','); ?></span><span class="views"><i class="iconfont icon-view"></i><?php Views_Plugin::theViews(); ?></span><span class="com"><i class="iconfont icon-comment"></i><a href="<?php $this->permalink();?>#comments"><?php $this->commentsNum('暂无', '1条', '%d条'); ?></a></span></div>
+		<div class="title_info"><span class="time"><i class="iconfont icon-data"></i><a href="<?php $this->date('Y/m/'); ?>" title="<?php $this->date('Y-m-d'); ?>"><?php $this->dateWord();?></a></span><span class="author"><i class="iconfont icon-author"></i><a href="/"><?php $this->author(); ?></a></span><span class="cate"><i class="iconfont icon-category"></i><?php $this->category(','); ?></span><span class="views"><i class="iconfont icon-view"></i><?php theViews(); ?></span><span class="com"><i class="iconfont icon-comment"></i><a href="<?php $this->permalink();?>#comments"><?php $this->commentsNum('暂无', '1条', '%d条'); ?></a></span></div>
 		</div>		
 		<div class="post_entry clearfix">		
 			<a href="<?php $this->permalink();?>" title="<?php $this->title() ?>"><img class="thumbnail" src="//itlu.org/index/thumb.png" data-original="<?php show_first_img($this);?><?php $this->options->fileext(); ?>" /></a>
